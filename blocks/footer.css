@@ -1,4 +1,4 @@
-.footer__copyright {
+.footer {
     font-family: 'Inter', Arial, sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -11,7 +11,7 @@
 }
 
 @media screen and (max-width: 320px) {
-    .footer__copyright {
+    .footer {
         margin-left: 20px;
         margin-right: 20px;
         margin-top: 48px;
