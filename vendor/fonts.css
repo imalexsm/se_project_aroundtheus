@@ -1,0 +1,37 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;900&family=Istok+Web:wght@400;700&display=swap');*/
+
+@font-face {
+    src: url(../vendor/fonts/Inter-Regular.woff);
+    font-family: 'inter';
+    font-weight: 400;
+}
+
+@font-face {
+    src: url(../vendor/fonts/Inter-Regular.woff2);
+    font-family: 'inter';
+    font-weight: 400;
+}
+
+@font-face {
+    src: url(..vendor/fonts/Inter-Medium.woff);
+    font-family: 'inter';
+    font-weight: 500;
+}
+
+@font-face {
+    src: url(../vendor/fonts/inter-medium.woff2);
+    font-family: 'inter';
+    font-weight: 500;
+}
+
+@font-face {
+    src: url(../vendor/fonts/inter-black.woff);
+    font-family: 'inter';
+    font-weight: 900;
+}
+
+@font-face {
+    src: url(../vendor/fonts/inter-black.woff2);
+    font-family: 'inter';
+    font-weight: 900;
+}
