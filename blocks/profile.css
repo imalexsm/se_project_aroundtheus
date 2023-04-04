@@ -33,7 +33,7 @@
     opacity: 0.6;
     border: 2px solid #FFFFFF;
     border-radius: 2px;
-    background-image: url(../images/Vectorhover.svg) center no-repeat;
+    cursor: pointer;
 }
 
 .profile__title {

@@ -5,9 +5,9 @@
     font-size: 18px;
     line-height: 22px;
     color: #545454;
-    max-width: 318px;
-    margin-left: 200px;
-    margin-top: 67px;
+    max-width: 880px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 @media screen and (max-width: 425px) {
@@ -17,4 +17,11 @@
         margin-top: 48px;
         max-width: 282px;
     }
+}
+
+@media (min-width: 425px) and (max-width: 800px) {
+    .footer {
+        margin: 0;
+        margin-left: 100px;
+}
 }
