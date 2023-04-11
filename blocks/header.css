@@ -23,7 +23,7 @@
 }
 }
 
-@media (min-width: 425px) and (max-width: 896px) {
+@media (min-width: 426px) and (max-width: 896px) {
     .header {
         margin: 0;
         box-sizing: border-box;
@@ -31,26 +31,3 @@
         padding-top: 45px;
     }
 }
-/*@media screen and (max-width: 425px) {
-    .header{ 
-        margin-top: 28px;
-        margin-left: 27px;
-    }
-
-    .header__logo {
-        height: 24px;
-        width: 126px;
-    }
-   
-}
-
-@media (min-width: 425px) and (max-width: 800px) {
-    .header{ 
-        margin-top: 28px;
-        margin-left: 40px;
-}
-}
-
-@media screen and (min-width: 801px) {
-
-}*/
