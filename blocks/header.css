@@ -2,10 +2,20 @@
     margin-top: 45px;
 }
 
+.header__logo {
+    height: 33px;
+    width: 173px;
+}
+
 @media screen and (max-width: 425px) {
     .header{ 
         margin-top: 28px;
         margin-left: 27px;
+    }
+
+    .header__logo {
+        height: 24px;
+        width: 126px;
     }
    
 }
@@ -18,5 +28,5 @@
 }
 
 @media screen and (min-width: 801px) {
-    
+
 }
