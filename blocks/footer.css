@@ -16,18 +16,15 @@
     margin: 0;
 }
 
-/*@media screen and (max-width: 425px) {
-    .footer {
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-top: 48px;
-        max-width: 282px;
+@media screen and (max-width: 425px){
+    .footer__copyright {
+        height: 14px;
+        width: 282px;
     }
 }
 
-@media (min-width: 425px) and (max-width: 800px) {
-    .footer {
-        margin: 0;
-        margin-left: 100px;
+@media (min-width: 426px) and (max-width: 896px) {
+    .footer__copyright {
+    margin-left: 100px;
+    }
 }
-}*/
