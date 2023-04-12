@@ -1,5 +1,7 @@
 .header {
     margin-top: 45px;
+    border-bottom: solid 1px rgba(255,255,255, 0.7);
+    padding-bottom: 41px;
 }
 
 .header__logo {
@@ -8,26 +10,18 @@
     box-sizing: border-box;
 }
 
-@media screen and (max-width: 425px) {
-.header {
-    margin: 0;
-    box-sizing: border-box;
-    padding-left: 27px;
-    padding-top: 28px;
-
-}
-
-.header__logo {
-    height: 24px;
-    width: 126px;
-}
-}
-
-@media (min-width: 426px) and (max-width: 896px) {
+@media screen and (max-width: 896px) {
     .header {
         margin: 0;
         box-sizing: border-box;
-        padding-left: 100px;
-        padding-top: 45px;
+        padding-left: 27px;
+        padding-top: 28px;
+        border-bottom: solid 1px rgba(255,255,255, 0.7);
+        padding-bottom: 32px;
     }
-}
+    
+    .header__logo {
+        height: 24px;
+        width: 126px;
+    }
+    }
