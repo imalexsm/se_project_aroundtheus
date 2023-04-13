@@ -17,20 +17,16 @@
 }
 
 @media screen and (max-width: 896px) {
-.footer__copyright {
-    height: 14px;
-    width: 282px;
-}
-
 .footer {
     margin: 0;
-    margin-left: 19px;
-    margin-top: 48px;
-    margin-bottom: 36px;
+    padding-left: 19px;
+    padding-top: 48px;
+    padding-bottom: 36px;
     font-family: 'Inter', Arial, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
+    box-sizing: border-box;
 }
 }
