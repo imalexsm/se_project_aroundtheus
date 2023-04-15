@@ -1,4 +1,4 @@
-# Project 3/4: Around the U.S.
+# Project Name: Around The U.S.
 
 
 **Project Description and Functionality**
