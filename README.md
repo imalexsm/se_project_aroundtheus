@@ -15,4 +15,4 @@ Create an Array of Data and Objects
 
 **Project Link**
 
-https://github.com/imalexsm/se_project_aroundtheus
+https://imalexsm.github.io/se_project_aroundtheus/
