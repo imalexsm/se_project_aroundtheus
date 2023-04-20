@@ -75,7 +75,7 @@
     margin-top: 20px;
 }
 
-.form__input {
+.modal__form-input {
     font-family: 'Inter', Arial, sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -89,7 +89,7 @@
     padding-bottom: 13px;
 }
 
-.form__input::placeholder {
+.modal__form-input::placeholder {
     font-family: 'Inter', Arial, sans-serif;
     font-style: normal;
     font-weight: 400;
