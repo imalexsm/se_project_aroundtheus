@@ -1,0 +1,90 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: flex;
+    padding: 0 19px;
+}
+
+.modal_opened {
+    display: flex;
+}
+.modal__container {
+    position: relative;
+    background-color: white;
+    margin: auto;
+    padding: 36px;
+    border-radius: 10px;
+    height: 330px;
+    width: 430px;
+}
+
+.modal__close {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    position: absolute;
+    top: -45px;
+    right: -45px;
+    width: 40px;
+    height: 40px;
+    background-image: url("../images/Closeicon.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.modal__heading {
+    color: #000;
+    font-family: 'Inter', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 0;
+    padding-bottom: 54px;
+    width: 330px;
+    height: 23px;
+    margin: 0;
+}
+
+.modal__form {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    align-items: center;
+    
+}
+
+.modal__button {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Inter', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    border-radius: 2px;
+    height: 50px;
+    width: 358px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.form__input {
+    font-family: 'Inter', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba (0, 0, 0, 1);
+    border: none;
+    height: 14px;
+    width: 358px;
+    padding-bottom: 48px;
+    border-bottom;: 1px solid #000;
+}
+
