@@ -102,20 +102,24 @@
     .modal__heading {
         font-size: 18px;
         line-height: 18px;
-        padding-bottom: 75px;
+        padding-bottom: 70px;
         width: 238px;
         height: 22px;
     }
 
     .modal__container {
-        padding: 35px;
-        height: 282px;
-        width: 322px;
+        padding: 25px;
+        height: 322px;
+        width: 282px;
     }
     .modal__close {
         top: -50px;
         right: 0px;
         height: 26px;
         width: 26px;
+    }
+
+    .modal__button {
+        margin-top: 15px;
     }
 }
