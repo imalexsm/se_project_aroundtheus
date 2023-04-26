@@ -50,6 +50,9 @@
     line-height: 48px;
     grid-area: title;
     margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .profile__description {
