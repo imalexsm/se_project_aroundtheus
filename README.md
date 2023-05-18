@@ -8,6 +8,7 @@ Responsive design and CSS functionality using media queries.  Page should be abl
 * Add Modal open/close Function
 * Add Modal Profile Edit and save capabilities
 * Update HTML to have Javascript to add content
+* Javascript to input information and swap pictures out
 
 **Technologies Used**
 * Objects and Arrays
@@ -16,7 +17,10 @@ Responsive design and CSS functionality using media queries.  Page should be abl
 * Form buttons
 * Sizing and Format pulled from Figma
 * Javascript function/array/Event Listener capability
+* Call Functions
+* Smooth transition CSS properties
 
 **Project Link**
 
 https://imalexsm.github.io/se_project_aroundtheus/
+
