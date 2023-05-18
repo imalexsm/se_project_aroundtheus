@@ -76,7 +76,6 @@ function getCardElement(cardData) {
   const cardImageEl = cardElement.querySelector(".card__image");
   const cardTitleEl = cardElement.querySelector(".card__title");
 
-
   // like button
   const likeButton = cardElement.querySelector(".card__like-button");
   
@@ -140,7 +139,6 @@ profileAddForm.addEventListener("submit", handleCardAddSubmit);
 //edit profile button
 profileEditCloseBtn.addEventListener("click", closeEditPopup);
 profileEditForm.addEventListener("submit", handleProfileEditSubmit);
-
 
 
 initialCards.forEach((cardData) => renderCard(cardData, cardListEl));
