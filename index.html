@@ -104,9 +104,22 @@
       </div>
     </div>
 
+    <div class="modal" id="preview-image-modal">
+      <div class="modal__container">
+        <button
+          type="button"
+          class="modal__close"
+          id="preview-image-close-btn"
+        ></button>
+        <img src="" class="card__image" alt="" />
+      </div>
+      <div class="modal__overlay"></div>
+    </div>
+
     <template id="card-template">
       <li class="card">
         <img src="" class="card__image" alt="" />
+        <button class="card__delete-button" type="button"></button>
         <div class="card__description">
           <h2 class="card__title"></h2>
           <button class="card__like-button" type="button"></button>
