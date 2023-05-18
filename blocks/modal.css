@@ -135,6 +135,11 @@
     color: rgba(0, 0, 0, 1);
 }
 
+.modal__image-preview {
+    height: 540px;
+    width: 433px;
+}
+
 @media screen and (max-width: 600px) {
     .modal__heading {
         font-size: 18px;
@@ -171,4 +176,9 @@
         top: -30px;
         right: -30px;
     }
+    .modal__image-preview {
+        box-sizing: border-box;
+         height: 299px;
+         width: 240px;
+     }
 }
