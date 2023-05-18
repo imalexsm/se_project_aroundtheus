@@ -63,7 +63,7 @@ function closeAddPopup() {
   profileAddModal.classList.remove("modal_opened");
 }
 
-function closeAddPopup() {
+function closeModalPopup() {
   previewAddModal.classList.remove("modal_opened");
 }
 
@@ -99,8 +99,6 @@ function getCardElement(cardData) {
     modalTitleEl.innerHTML = cardData.name;
   })
   
-  //add click listener to the cardimage element
-    //openmodal with previewImageModal
 
   cardImageEl.src = cardData.link;
   cardImageEl.alt = cardData.name;
@@ -149,7 +147,8 @@ profileEditCloseBtn.addEventListener("click", closeEditPopup);
 profileEditForm.addEventListener("submit", handleProfileEditSubmit);
 
 //Preview Button
-previewCloseBtn.addEventListener("click", closeAddPopup);
+previewCloseBtn.addEventListener("click", closeModalPopup);
+
  
 
 initialCards.forEach((cardData) => renderCard(cardData, cardListEl));
