@@ -13,6 +13,25 @@
 .modal_opened {
     display: flex;
 }
+
+.modal__preview {
+    position: relative;
+    margin: auto;
+    border-radius: 10px;
+    max-width: 430px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.modal__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: 10px;
+}
+
 .modal__container {
     position: relative;
     background-color: white;
@@ -137,4 +156,8 @@
     .modal__button {
         margin-top: 15px;
     }
+
+    .modal__preview {
+        box-sizing: border-box;
+        max-width: 240px;
 }

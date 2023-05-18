@@ -49,9 +49,10 @@ const profileAddForm = document.querySelector("#add-profile-form");
 const profileAddTitleInput = document.querySelector("#add-title-input");
 const profileImageLinkInput = document.querySelector("#profile-imagelink-input");
 //preview image modal
-const previewImageModal = document.querySelector("#preview-image-modal");
-const previewImageCloseBtn = document.querySelector("#preview-image-close-btn");
-const cardImageModal = document.querySelector("#card-image-preview")
+const previewAddModal = document.querySelector("#preview-image-modal");
+const previewCloseBtn = document.querySelector("#preview-image-close-btn");
+
+
 
 //Functions//
 function closeEditPopup() {
@@ -62,8 +63,8 @@ function closeAddPopup() {
   profileAddModal.classList.remove("modal_opened");
 }
 
-function closePreviewPopup() {
-  previewImageCloseBtn.classList.remove("modal__preview");
+function closeAddPopup() {
+  previewAddModal.classList.remove("modal_opened");
 }
 
 function renderCard(cardData, wrapper) {
@@ -75,7 +76,7 @@ function getCardElement(cardData) {
   const cardElement = cardTemplate.cloneNode(true);
   const cardImageEl = cardElement.querySelector(".card__image");
   const cardTitleEl = cardElement.querySelector(".card__title");
-
+ 
   // like button
   const likeButton = cardElement.querySelector(".card__like-button");
   
@@ -90,7 +91,14 @@ function getCardElement(cardData) {
     cardElement.remove();
   })
 
-
+  cardImageEl.addEventListener("click", () => {
+    previewAddModal.classList.add("modal_opened");
+    const cardImagePreviewEl = document.querySelector(".card__image-preview");
+    const modalTitleEl = document.querySelector(".modal__title");
+    cardImagePreviewEl.src = cardData.link;
+    modalTitleEl.innerHTML = cardData.name;
+  })
+  
   //add click listener to the cardimage element
     //openmodal with previewImageModal
 
@@ -117,7 +125,6 @@ function handleCardAddSubmit(e) {
   closeAddPopup();
 }
 
-
 //Event Listeners//
 profileEditBtn.addEventListener("click", () => {
   profileTitleInput.value = profileTitle.textContent;
@@ -132,14 +139,18 @@ profileAddBtn.addEventListener("click", () => {
 })
 
 
+
 //add new card button
-profileAddCloseBtn.addEventListener("click", () => closeAddPopup(profileAddModal));
-profileAddForm.addEventListener("submit", handleCardAddSubmit);
+profileAddCloseBtn.addEventListener("click", closeAddPopup);
+profileAddModal.addEventListener("submit", handleCardAddSubmit);
 
 //edit profile button
 profileEditCloseBtn.addEventListener("click", closeEditPopup);
 profileEditForm.addEventListener("submit", handleProfileEditSubmit);
 
+//Preview Button
+previewCloseBtn.addEventListener("click", closeAddPopup);
+ 
 
 initialCards.forEach((cardData) => renderCard(cardData, cardListEl));
 
