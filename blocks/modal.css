@@ -29,7 +29,6 @@
 }
 
 .modal__title {
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -135,17 +134,12 @@
     color: rgba(0, 0, 0, 1);
 }
 
-.modal__image-preview {
-    height: 540px;
-    width: 433px;
-}
 
 @media screen and (max-width: 600px) {
     .modal__heading {
         font-size: 18px;
         line-height: 18px;
         padding-bottom: 70px;
-        max-width: 238px;
         height: 22px;
     }
 
@@ -176,9 +170,5 @@
         top: -30px;
         right: -30px;
     }
-    .modal__image-preview {
-        box-sizing: border-box;
-         height: 299px;
-         width: 240px;
-     }
+   
 }
