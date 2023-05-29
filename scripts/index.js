@@ -61,6 +61,7 @@ const typeClose = "close";
 
 //Functions//
 function toggleModal(modal, className, type) {
+  console.log(modal, className, type)
   if (type == typeOpen) {
     modal.classList.add(className);
   }
@@ -95,7 +96,7 @@ function getCardElement(cardData) {
 
   cardImageEl.addEventListener("click", () => {
     toggleModal(previewAddModal, modalOpenedClassName, typeOpen);
-    const cardImagePreviewEl = document.querySelector(".card__image-preview");
+    const cardImagePreviewEl = document.querySelector(".modal__image-preview");
     const modalTitleEl = document.querySelector(".modal__title");
     cardImagePreviewEl.src = cardData.link;
     modalTitleEl.textContent = cardData.name;
@@ -143,14 +144,20 @@ profileAddBtn.addEventListener("click", () => {
 });
 
 //add new card button
-profileAddCloseBtn.addEventListener("click", toggleModal(profileAddModal, modalOpenedClassName, typeClose));
+profileAddCloseBtn.addEventListener("click", () => {
+  toggleModal(profileAddModal, modalOpenedClassName, typeClose)
+});
 profileAddModal.addEventListener("submit", handleCardAddSubmit);
 
 //edit profile button
-profileEditCloseBtn.addEventListener("click", toggleModal(profileEditModal, modalOpenedClassName, typeClose));
+profileEditCloseBtn.addEventListener("click", () => {
+  toggleModal(profileEditModal, modalOpenedClassName, typeClose)
+});
 profileEditForm.addEventListener("submit", handleProfileEditSubmit);
 
 //Preview Button
-previewCloseBtn.addEventListener("click", toggleModal(previewAddModal, modalOpenedClassName, typeClose));
+previewCloseBtn.addEventListener("click", () => {
+  toggleModal(previewAddModal, modalOpenedClassName, typeClose)
+});
 
 initialCards.forEach((cardData) => renderCard(cardData, cardListEl));

@@ -70,10 +70,7 @@
     transition: 0.3s ease-in;
 }
 
-.card__image-preview {
-    height: 540px;
-    width: 433px;
-}
+
 
 
 
@@ -85,9 +82,5 @@
         width: 30px;
     }
 
-    .card__image-preview {
-        box-sizing: border-box;
-         height: 299px;
-         width: 240px;
-     }
+  
 }
