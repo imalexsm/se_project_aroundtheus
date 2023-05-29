@@ -54,6 +54,7 @@ const profileImageLinkInput = document.querySelector(
 //preview image modal
 const previewAddModal = document.querySelector("#preview-image-modal");
 const previewCloseBtn = document.querySelector("#preview-image-close-btn");
+
 const modalOpenedClassName = "modal_opened";
 const typeOpen = "open";
 const typeClose = "close";
