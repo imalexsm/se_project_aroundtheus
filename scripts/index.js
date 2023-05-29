@@ -121,7 +121,8 @@ function handleCardAddSubmit(e) {
   const link = profileImageLinkInput.value;
   renderCard({ name, link }, cardListEl);
   closeModal(profileAddModal);
-  addProfileForm.reset()
+  const addCardForm = e.target;
+  addCardForm.reset();
 }
 
 //Event Listeners//
